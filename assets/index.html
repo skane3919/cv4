@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <main class="main-container container">
+    <section class="section" id="profile">
+      <h1 class="section-title">Кейзеров Станислав</h1>
+      <img src="./assets/img/avatar.jpg" alt="avatar" class="avatar">
+      <p>Junior Frontend Developer</p>
+    </section>
+
+    <section class="section" id="summary">
+      <h2 class="section-title">О себе</h2>
+      <p>Студент ВГУ. Изучаю веб-разработку, основы адаптивной верстки и работу с системами контроля версий.</p>
+    </section>
+
+    <section class="section" id="skills">
+      <h2 class="section-title">Навыки</h2>
+      <ul class="skills-list">
+        <li class="section-item">HTML5 & CSS3</li>
+        <li class="section-item">C++ (ООП, структуры данных)</li>
+        <li class="section-item">Git & GitHub</li>
+      </ul>
+    </section>
+
+    <section class="section" id="education">
+      <h2 class="section-title">Образование</h2>
+      <p>Витебский государственный университет (ВГУ)</p>
+    </section>
+  </main>
+
+  <script>
+    const menu = document.querySelector('#mobile-menu');
+    const menuLinks = document.querySelector('.nav-list');
+    menu.addEventListener('click', function() {
+      menu.classList.toggle('is-active');
+      menuLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
